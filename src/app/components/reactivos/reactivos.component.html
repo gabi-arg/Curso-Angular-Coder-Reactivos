@@ -1,0 +1,15 @@
+<div class="row" >
+  <mat-card class=" col-md-3" *ngFor="let alumno of alumnos$ |async" >
+    <mat-card-header>
+      <mat-card-title>Nombre:  {{alumno.nombre}}</mat-card-title>
+      <mat-card-subtitle>Usuario: {{alumno.username}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Edad: {{alumno.edad}}</p>
+      <p>Cursos Inscriptos: {{alumno.cursosInscriptos}}</p>
+    </mat-card-content>
+    <mat-card-actions >
+      <button   mat-flat-button color="primary">Editar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
